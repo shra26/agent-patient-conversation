@@ -1,7 +1,7 @@
 agent-v2.py is the latest version of the Ai Agent
 
 Usage details:
-Please send an email to me before making the call so I can turn on the server(it's default off as I haven't configured my vpc and security groups on AWS correctly). 
+Please send an email to me before making the call so I can turn on the AWS EC2 server(it's default off as I haven't configured my vpc and security groups on AWS correctly). 
 The phone number to call is 
 **+12184837553**
 
