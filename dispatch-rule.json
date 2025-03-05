@@ -1,0 +1,13 @@
+{
+    "name": "My dispatch rule",
+    "rule": {
+      "dispatchRuleIndividual": {
+        "roomPrefix": "call"
+      }
+    },
+    "room_config": {
+      "agents": [{
+        "agent_name": "assort-health-agent"
+      }]
+    }
+  }
