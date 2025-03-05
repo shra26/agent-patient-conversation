@@ -1,11 +1,13 @@
+agent-v2.py is the latest version of the Ai Agent
+
 Usage details:
-Please send an email to me before making the call so I can turn on the server(default off as I haven't confgured my vpc and security groups on AWS correctly). 
+Please send an email to me before making the call so I can turn on the server(it's default off as I haven't configured my vpc and security groups on AWS correctly). 
 The phone number to call is 
 **+12184837553**
 
 Assumptions:
-1. The storage of conversation should Ideally be saved into a NoSQL db like DynamoDB(Not implemented on this solution but will be easy to add if needed)
-2. I have tried basic processing of information with Regex, I understand this in not ideal as there is a chance to miss the information provided by the caller, will need to integrate further NLP to avoid this issue. Email sender sometime does not work due to this issue, I'm sure if we were to collaborate we could find a solution for this.
+1. The storage of conversation should ideally be saved into a NoSQL db like DynamoDB(Not implemented on this solution but will be easy to add if needed)
+2. I have tried basic processing of information with Regex. I understand this is not ideal as there is a chance to miss the information provided by the caller, so we will need to integrate further NLP to avoid this issue. Email sending sometimes does not work due to this issue. I'm sure we could find a solution if we were to collaborate.
 
 
 Extra Notes:
