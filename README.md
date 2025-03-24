@@ -1,3 +1,6 @@
+Worked with Livekit's agents using Deepgram's STT and TTS to schedule appointments for the patients and doctor's 
+the patient and doctor appointment schedules are mocked but can be easily extended to different databases.
+
 agent-v2.py is the latest version of the Ai Agent
 
 Usage details:
