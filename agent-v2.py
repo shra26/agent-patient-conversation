@@ -166,7 +166,7 @@ def send_confirmation_email():
     msg['To'] = patient_info.email
     msg['Subject'] = "Appointment Confirmation"
     
-    body = f"Dear {patient_info.name},\n\nYour appointment with {patient_info.appointment_doctor} is scheduled for {patient_info.appointment_time}.\n\nBest regards,\nAssort Health"
+    body = f"Dear {patient_info.name},\n\nYour appointment with {patient_info.appointment_doctor} is scheduled for {patient_info.appointment_time}.\n\nBest regards,\n Health Company"
     msg.attach(MIMEText(body, 'plain'))
 
     # Add your SMTP server details here
@@ -184,7 +184,7 @@ async def entrypoint(ctx: JobContext):
     initial_ctx = llm.ChatContext().append(
         role="system",
         text=(
-            "You are a voice assistant for Assort Health, scheduling patient appointments. "
+            "You are a voice assistant for Health company, scheduling patient appointments. "
             "You must collect the following information in a friendly, professional manner:\n"
             "1. Patient's name and date of birth\n"
             "2. Insurance information (payer name and ID)\n"
@@ -246,7 +246,7 @@ async def entrypoint(ctx: JobContext):
     agent.start(ctx.room, participant)
 
     # The agent should be polite and greet the user when it joins :)
-    await agent.say("Welcome to Assort Health. I'm here to help you schedule an appointment. Can you please provide your name and date of birth to start?", allow_interruptions=True)
+    await agent.say("Welcome to Health Company. I'm here to help you schedule an appointment. Can you please provide your name and date of birth to start?", allow_interruptions=True)
 
 
 if __name__ == "__main__":
@@ -254,6 +254,6 @@ if __name__ == "__main__":
         WorkerOptions(
             entrypoint_fnc=entrypoint,
             prewarm_fnc=prewarm,
-            agent_name="assort-health-agent"
+            agent_name="health-agent"
         ),
     )
