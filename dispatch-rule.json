@@ -7,7 +7,7 @@
     },
     "room_config": {
       "agents": [{
-        "agent_name": "assort-health-agent"
+        "agent_name": "health-agent"
       }]
     }
   }
